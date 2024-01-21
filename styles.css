@@ -1,0 +1,184 @@
+/* Estilos globales */
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    background-image:url(https://www.unotv.com/uploads/2022/08/getty-images-nube-morada-191032.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilo para el encabezado del artículo */
+article header {
+    background-color: rgba(122, 42, 132, 0.628);
+    color: #fff;
+    padding: 1em 1em;
+    text-align: center;
+    font-size: large;
+    border-radius: 10px;
+    border: rgba(223, 158, 236, 0.486) 3px groove;
+    background-image: url(https://armory.visualsoldiers.com/wp-content/uploads/2019/12/CSS-Background.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Títulos */
+h1, h2 {
+    margin-bottom: 0.5em;
+}
+
+
+/* Fecha del artículo */
+article header time {
+    font-style:oblique;
+    color: white;
+    background-color: hsla(261, 30%, 45%, 0.676);
+    border-radius: 5px;
+}
+
+
+/* Estilos para las secciones */
+section {
+    background-color: rgba(230, 197, 158, 0.363);
+    margin: 1em;
+    padding: 2em 2em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(112, 2, 255, 0.39);
+    border: rgba(252, 238, 190, 0.486) 2px outset;
+}
+
+
+/* Estilos para listas */
+ul {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+ul ul {
+    list-style-type:square; 
+    margin-top: 0.5em; 
+}
+
+
+/* Estilos para el formulario */
+form {
+    background-image:url(https://images.unsplash.com/photo-1442323794357-25b2ec110967?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    opacity: 0.7;
+    background-size: cover;
+    background-position: center;
+    padding: 3em 3em;
+    border-radius: 20px;
+   
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #6c6b6d3b;
+    border-radius: 6px;
+    background-color:  #eeb5f562;
+    
+    
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    background-color: rgba(192, 126, 212, 0.655);
+    border: rgba(255, 254, 254, 0.486) 2px solid;
+    outline: none;
+    border-radius: 6px;
+}
+
+
+form input[type="submit"] {
+    background-color: hsla(261, 30%, 45%, 0.95);
+    color: white;
+    border: none;
+    padding: 0.7em 2em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+
+form input[type="submit"]:hover {
+    background-color: #352045cb;
+    
+}
+
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2em;
+    background-color: #5e3480a0;
+    box-shadow: 0 5px 10px rgba(16, 15, 15, 0.306);
+    background-image: url(https://www.shutterstock.com/image-photo/clouds-pink-skysweet-skylight-sunset-600nw-2302963261.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+table, th, td {
+    border: 1.5px ridge #eee5f3b6;
+}
+
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    
+}
+
+
+thead {
+    background-color:  hsla(261, 30%, 45%, 0.813);
+    color: #fff;
+}
+
+
+/* Media queries para responsividad. Aún no hemos dado esto y solamente lo quiero mencionar. Busca su significado */
+/* aplicar estilos diferentes a un documento HTML en función de las características del
+dispositivo en el que se visualiza la página,
+principalmente basándose en el tamaño de la pantalla y la resolución. */
+@media (max-width: 600px) {
+    body {
+        background-color: #e3f2fd;
+    }
+
+
+    article header {
+        padding: 0.5em 0;
+    }
+
+
+    form input[type="submit"] {
+        width: 100%;
+    }
+}
+
+
+
